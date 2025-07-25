@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Background Pattern</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Video Background -->
+  <video autoplay muted loop id="bg-video">
+    <source src="https://cdn.coverr.co/videos/coverr-aerial-shot-of-ocean-waves-7187/1080p.mp4" type="video/mp4">
+  </video>
+
+  <!-- Pattern Background -->
+  <div class="pattern-bg"></div>
+
+  <!-- SVG Animation -->
+  <div class="animated-bg">
+    <svg width="100%" height="100%">
+      <circle cx="50%" cy="50%" r="100" fill="none" stroke="#ffffff88" stroke-width="4">
+        <animate attributeName="r" values="100;200;100" dur="6s" repeatCount="indefinite"/>
+      </circle>
+    </svg>
+  </div>
+
+  <!-- Main Content -->
+  <div class="content">
+    <h1>Elegant Background Design</h1>
+    <p>Video, Pattern, or SVG animation – a background can set the tone for your site.</p>
+    <button onclick="toggleBackground()">Toggle Background</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
